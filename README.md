@@ -2,6 +2,8 @@
 This project is prepared password management.
 
 
+<img src="https://github.com/kostasmitroglou/thesystem/blob/master/thesystem.PNG">
+
 ## Contributors
 - Kostas Mitroglou
 
