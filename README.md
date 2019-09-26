@@ -1,6 +1,7 @@
 ### PASSWORD MANAGEMENT APPLICATION
 This project is prepared password management.
 
+Version:1.0.0
 
 <img src="https://github.com/kostasmitroglou/thesystem/blob/master/thesystem.PNG">
 
