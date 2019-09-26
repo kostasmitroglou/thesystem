@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block page_content %}
+
+<h1>Server name - IP Address</h1>
+<form class="form-horizontal" role="form" action="{% url 'data_index'%}" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="server_name">
+                                Server Name:
+                            </label>
+                            <div class="col-sm-10">
+                                <input id="server_name" name="server_name" type="text" value="{{ server_name }}">
+                            </div>
+                        </div>
+                            <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-success">Search</button>
+                            </div>
+                        </div>
+       </form>
+
+<table>
+    <tr>
+        <th>Server Name</th>
+        <th>IP Address</th>
+        <th>System Owner</th>
+        <th>Take Credentials</th>
+    </tr>
+    {% for data in datas %}
+    <tr>
+        <td>{{data.server_name}}</td>
+        <td>{{data.ip_address}}</td>
+        <td>{{data.system_owner}}</td>
+        <td>                <a href="{% url 'data_detail' data.pk  %}"
+
+                   class="btn btn-primary">
+                    Take Credential
+                </a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+
+
+{% endblock %}

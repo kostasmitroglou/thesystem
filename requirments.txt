@@ -1,0 +1,7 @@
+Django==2.2.4
+PyYAML==5.1.2
+SQLite==3.8.3
+paramiko==2.6.0
+lxml==4.4.1
+zeep==3.4.0
+spyne==2.12.16

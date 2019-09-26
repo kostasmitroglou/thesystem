@@ -1,0 +1,7 @@
+mail:
+  host : "mail.test.intra"
+  port : 25
+  username : "django@test"
+  password : "test"
+  mail_from : "django@test"
+  mail_to : "test@test"
